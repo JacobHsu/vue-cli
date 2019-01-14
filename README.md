@@ -5,6 +5,12 @@ vuejs/[vue-cli](https://github.com/vuejs/vue-cli)
 
 [installation](https://cli.vuejs.org/guide/installation.html) `npm install -g @vue/cli`  
 
+`vue --version`  
+
+[vue create](https://cli.vuejs.org/zh/guide/creating-a-project.html)  
+
+
+
 `vue list`  
 `vue init webpack vuewebpack`    
 
