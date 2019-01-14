@@ -8,7 +8,7 @@ vuejs/[vue-cli](https://github.com/vuejs/vue-cli)
 `vue --version`  
 
 [vue create](https://cli.vuejs.org/zh/guide/creating-a-project.html)  
-
+[mode-and-env](https://cli.vuejs.org/guide/mode-and-env.html#modes) restart `npm run serve`  
 
 
 `vue list`  
