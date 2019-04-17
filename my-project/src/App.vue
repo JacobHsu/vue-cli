@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
+    <p>{{ $t("hello") }}</p>
     <router-view/>
   </div>
 </template>

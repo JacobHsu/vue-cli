@@ -1,5 +1,18 @@
 # Note
 
+
+#### vue-i18n
+
+[Vue I18n](https://kazupon.github.io/vue-i18n/) is internationalization plugin for Vue.js
+[如何让一个vue项目支持多语言](https://segmentfault.com/a/1190000015008808)  
+[各國語言(語系)代碼表(zh-tw, zh-cn,en-us...) json 格式](https://adon988.logdown.com/posts/2207656-national-language-code-table-zh-tw-zh-cn-en-us-json-format)  
+
+src下建立i18n語系資料夾 
+main.js 引入i18n資料夾  `import i18n from './i18n'`
+`new Vue({..i18n,..})`  new Vue 載入
+
+[Getting started](http://kazupon.github.io/vue-i18n/started.html#html)  
+
 #### moment 
 
 [moment](https://www.npmjs.com/package/moment) - npm
