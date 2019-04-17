@@ -7,6 +7,7 @@
 
 <script>
 import { getFormatDates, getFormatSec, getSecByTimestamp } from '@/libs/moment'
+import { getLodash } from '@/libs/lodash'
 
 export default {
   name: 'App',
@@ -17,15 +18,15 @@ export default {
   },
   mounted() {
     this.getNow();
-    
+    console.log( 'getLodash', getLodash('data_mounted') )
   },
   methods: {
     getNow() {
       const dateTime = Date.now();
       this.timestamp = Math.floor(dateTime / 1000 )
-      console.log( getFormatDates() )
-      console.log( getFormatSec() )
-      console.log( this.timestamp, getSecByTimestamp(this.timestamp) )
+      //console.log( getFormatDates() )
+      //console.log( getFormatSec() )
+      //console.log( this.timestamp, getSecByTimestamp(this.timestamp) )
     }
   },
 }
