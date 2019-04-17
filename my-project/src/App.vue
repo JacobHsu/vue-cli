@@ -2,6 +2,7 @@
   <div id="app">
     <img src="./assets/logo.png">
     <p>{{ $t("hello") }}</p>
+    <span v-text="$t('app-name')"></span>
     <router-view/>
   </div>
 </template>
