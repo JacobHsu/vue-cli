@@ -1,3 +1,11 @@
+# Note
+
+#### moment 
+npm [moment](https://www.npmjs.com/package/moment)  
+[momentjs](https://momentjs.com/)  
+[在JavaScript 簡單取得unix timestamp - Js Tips](http://www.jstips.co/zh_tw/javascript/extract-unix-timestamp-easily/)  
+
+
 # my-project
 
 > A Vue.js project

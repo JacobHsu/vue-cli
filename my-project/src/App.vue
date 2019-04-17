@@ -6,8 +6,28 @@
 </template>
 
 <script>
+import { getFormatDates, getFormatSec, getSecByTimestamp } from '@/libs/moment'
+
 export default {
-  name: 'App'
+  name: 'App',
+  data() {
+    return {
+      timestamp: 0
+    }
+  },
+  mounted() {
+    this.getNow();
+    
+  },
+  methods: {
+    getNow() {
+      const dateTime = Date.now();
+      this.timestamp = Math.floor(dateTime / 1000 )
+      console.log( getFormatDates() )
+      console.log( getFormatSec() )
+      console.log( this.timestamp, getSecByTimestamp(this.timestamp) )
+    }
+  },
 }
 </script>
 
