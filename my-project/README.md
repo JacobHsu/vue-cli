@@ -1,5 +1,18 @@
 # Note
 
+#### vuex
+
+`npm install vuex --save`  
+
+src下建立`store`語系資料夾 
+`main.js` 引入 `import store from './store'`  
+
+將變數從 `Component` 的 data 改存到 `Store` 的 state，並且只能透過 Store 下 `muation` 的 method 才能修改變數  
+使用 Vuex 的 state 時，都會改用 `computed`，如此 Store 的 state 只要一變動，Component 就會自動更新  
+
+[Vuex Getting Started](https://vuex.vuejs.org/zh/guide/)  
+[Vue CLI 快速建立使用 Vuex](https://oomusou.io/vue/vuex/basic/)  
+[Vuex 學習筆記 (2) - Vuex 安裝方式](https://jeremysu0131.github.io/Vue-js-Vuex-學習筆記-2-Vuex-安裝方式/)  
 
 #### vue-i18n
 

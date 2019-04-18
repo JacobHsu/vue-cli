@@ -3,6 +3,8 @@
     <img src="./assets/logo.png">
     <p>{{ $t("hello") }}</p>
     <span v-text="$t('app-name')"></span>
+    <h1>{{ count }}</h1>
+    <button @click="addCount">+</button>
     <router-view/>
   </div>
 </template>
@@ -20,7 +22,7 @@ export default {
   },
   mounted() {
     this.getNow();
-    console.log( 'getLodash', getLodash('data_mounted') )
+    //console.log( 'getLodash', getLodash('data_mounted') )
   },
   methods: {
     getNow() {
@@ -29,6 +31,14 @@ export default {
       //console.log( getFormatDates() )
       //console.log( getFormatSec() )
       //console.log( this.timestamp, getSecByTimestamp(this.timestamp) )
+    },
+    addCount() {
+      this.$store.commit('addCount');  
+    }
+  },
+  computed: {
+    count : function() {
+      return this.$store.state.count;
     }
   },
 }
