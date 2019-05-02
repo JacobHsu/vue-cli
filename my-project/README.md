@@ -1,6 +1,6 @@
 # Note
 
-#### vuex
+### vuex
 
 `npm install vuex --save`  
 
@@ -14,6 +14,22 @@ src下建立`store`語系資料夾
 [Vue CLI 快速建立使用 Vuex](https://oomusou.io/vue/vuex/basic/)  
 [Vuex 學習筆記 (2) - Vuex 安裝方式](https://jeremysu0131.github.io/Vue-js-Vuex-學習筆記-2-Vuex-安裝方式/)  
 
+[ Vuex 學習筆記 (4) - state 的核心概念](https://jeremysu0131.github.io/Vue-js-Vuex-學習筆記-4-state-的核心概念/)  
+
+State 單一狀態樹 (Single State Tree)  
+
+Vuex 使用單一狀態樹，這是一個物件包含了全部應用層的狀態與供應`單一數據來源 (Single source of truth)`，這代表通常你每個應用只會有一個 store 。單一狀態樹讓我們可以直接指定 state 其中的一項並讓我們能夠輕鬆的得到目前應用程式的狀態與快照 (snapshots)。  
+
+**組件仍然可以有本地的狀態** 
+使用 Vuex 並不代表要將所有狀態放入 Vuex ，如果有些狀態只有屬於某個組件，這樣的話我們就不需要將他放入 Vuex ，實際使用時我們還是要進行權衡和確認，不要把事情搞得太複雜。  
+
+
+#### mapState 輔助函數
+
+當一個組件需要獲取多個 state 的時候，如果每次都要宣告為 computed 會很麻煩，為了解決這個問題 Vuex 讓我們可以使用 mapState 輔助函數來幫助我們，將繁瑣的流程簡化。
+
+
+
 #### vue-i18n
 
 [Vue I18n](https://kazupon.github.io/vue-i18n/) is internationalization plugin for Vue.js
@@ -25,6 +41,8 @@ main.js 引入i18n資料夾  `import i18n from './i18n'`
 `new Vue({..i18n,..})`  new Vue 載入
 
 [Getting started](http://kazupon.github.io/vue-i18n/started.html#html)  
+
+利用 [filters](https://vuejs.org/v2/guide/filters.html) 自訂做語系檔 App.vue filters `i18n/my-TW.js`  
 
 #### moment 
 

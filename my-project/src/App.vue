@@ -2,6 +2,8 @@
   <div id="app">
     <img src="./assets/logo.png">
     <p>{{ $t("hello") }}</p>
+    <p>{{ 'hello' | lang }}</p>
+
     <span v-text="$t('app-name')"></span>
     <h1>{{ count }}</h1>
     <button @click="addCount">+</button>
@@ -12,6 +14,7 @@
 <script>
 import { getFormatDates, getFormatSec, getSecByTimestamp } from '@/libs/moment'
 import { getLodash } from '@/libs/lodash'
+import { tw } from '@/i18n/my-TW'
 
 export default {
   name: 'App',
@@ -20,9 +23,17 @@ export default {
       timestamp: 0
     }
   },
+  created() {
+    console.log('created', this.$store.state.count);
+  },
   mounted() {
     this.getNow();
     //console.log( 'getLodash', getLodash('data_mounted') )
+  },
+  filters: {
+    lang(val) {
+      return tw(val)
+    }
   },
   methods: {
     getNow() {
@@ -37,7 +48,8 @@ export default {
     }
   },
   computed: {
-    count : function() {
+    count() {
+      console.log('computed', this.$store.state.count);
       return this.$store.state.count;
     }
   },
