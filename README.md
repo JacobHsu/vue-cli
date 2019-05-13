@@ -11,6 +11,10 @@ vuejs/[vue-cli](https://github.com/vuejs/vue-cli)
 
 [vue create](https://cli.vuejs.org/zh/guide/creating-a-project.html)  
 創建一個項目 `vue create hello-world`  
+
+## projects router 
+maually select features  
+
 [mode-and-env](https://cli.vuejs.org/guide/mode-and-env.html#modes) restart `npm run serve`  
 
 `vue list`  
