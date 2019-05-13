@@ -8,7 +8,9 @@ vuejs/[vue-cli](https://github.com/vuejs/vue-cli)
 `vue -V`  
 `vue --version`  
 
+
 [vue create](https://cli.vuejs.org/zh/guide/creating-a-project.html)  
+創建一個項目 `vue create hello-world`  
 [mode-and-env](https://cli.vuejs.org/guide/mode-and-env.html#modes) restart `npm run serve`  
 
 `vue list`  
@@ -43,3 +45,9 @@ I  Your application is running here: http://localhost:8080
 
 編譯 Production 版本  
 `npm run build`   
+
+# projects
+
+Components [組件基礎研究](https://cn.vuejs.org/v2/guide/components.html)    
+`$ cd components`  
+`$ yarn serve`  
