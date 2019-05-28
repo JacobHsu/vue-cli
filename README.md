@@ -55,3 +55,7 @@ I  Your application is running here: http://localhost:8080
 Components [組件基礎研究](https://cn.vuejs.org/v2/guide/components.html)    
 `$ cd components`  
 `$ yarn serve`  
+
+# npm 
+
+使用Google Analytics？ [vue-analytics](https://www.npmjs.com/package/vue-analytics)  
