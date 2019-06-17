@@ -15,6 +15,16 @@ vuejs/[vue-cli](https://github.com/vuejs/vue-cli)
 [vue create](https://cli.vuejs.org/zh/guide/creating-a-project.html)  
 創建一個項目 `vue create hello-world`  
 
+# 2 vs 3
+
+`build`沒了、`config`沒了、3.0的安裝項目時自動下載node-model。  
+3.0 在根目錄下自己創建一個`vue.config.js`
+
+老項目的 `static` 全部遷移到 `public` 文件夾中，`index.html` 遷移到 `public`
+Vue CLI 3.x 將默認資源文件根路徑放到了 /public 目錄下，而默認精簡掉了 2.x 版本中的 /static 目錄。　
+在Vue CLI 3 ，`public` 文件夾不會被 webpack 處理，並部署在網站根目錄
+
+
 ## projects router 
 maually select features  
 
