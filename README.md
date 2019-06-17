@@ -1,5 +1,8 @@
 # vue-cli
 
+`init`  Vue CLI 3
+`init-webpack` Vue CLI 2
+
 [Vue CLI 3](https://cli.vuejs.org/)  
 vuejs/[vue-cli](https://github.com/vuejs/vue-cli)  
 
