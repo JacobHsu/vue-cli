@@ -19,7 +19,8 @@ const messages = {
 
 // Create VueI18n instance with options
 const i18n = new VueI18n({
-    locale: 'en-US', //ja-JP
+    locale: localStorage.getItem('locale') || 'en-US', //ja-JP
+    //this.$i18n.locale // 通過切換locale的值來實現語言切換
     messages: {
         'en-US': enUS,
         'zh-TW': zhTW,

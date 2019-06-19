@@ -24,7 +24,9 @@ export default {
   name: 'App',
   data() {
     return {
-      timestamp: 0
+      timestamp: 0,
+      lang: '',
+      weekname:''
     }
   },
   created() {
