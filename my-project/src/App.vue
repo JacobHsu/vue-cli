@@ -1,6 +1,10 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+
+    <button @click="changeLang">切換語言{{lang}}</button>
+    <h3>{{$t('welcome')}}</h3>
+    <h3>{{$t('today')}}{{weekname}}</h3>
+
     <p>{{ $t("hello") }}</p>
     <p>{{ 'hello' | lang }}</p>
 
@@ -45,6 +49,48 @@ export default {
     },
     addCount() {
       this.$store.commit('addCount');  
+    },
+    changeLang() {
+       this.lang = localStorage.getItem('locale') || 'zh-TW';
+       
+       if ( this.lang === 'zh-TW' ) {
+          this.lang = 'en-US';
+          this.$i18n.locale = this.lang;
+       } else {
+          this.lang = 'zh-TW';
+          this.$i18n.locale = this.lang;
+       }
+       localStorage.setItem('locale', this.lang);
+       let week = this.getWeek();
+       this.weekname = week;
+    },
+    getWeek() {
+      let week = new Date().getDay(); 
+      let day = 'week.sun';
+      switch (week) {
+        case 0:
+          day = 'week.sun';
+          break;
+        case 1:
+          day = 'week.mon';
+          break;
+        case 2:
+          day = 'week.tues';
+          break;
+        case 3:
+          day = 'week.wed';
+          break;
+        case 4:
+          day = 'week.thur';
+          break;
+        case 5:
+          day = 'week.fri';
+          break;
+        case 6:
+          day = 'week.sat';
+          break;
+      }
+      return this.$i18n.t(day);
     }
   },
   computed: {

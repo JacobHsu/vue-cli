@@ -44,6 +44,8 @@ main.js 引入i18n資料夾  `import i18n from './i18n'`
 
 利用 [filters](https://vuejs.org/v2/guide/filters.html) 自訂做語系檔 App.vue filters `i18n/my-TW.js`  
 
+[使用vue-i18n實現多語言切換效果](https://www.helloweba.net/javascript/609.html)
+
 #### moment 
 
 [moment](https://www.npmjs.com/package/moment) - npm
